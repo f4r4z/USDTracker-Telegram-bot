@@ -18,7 +18,8 @@ class Bot:
 
     def start(self, chat_id):
         message = "Welcome to the USD forex bot. Use the /help command to get a list of functionalities."
-        self.sendMessage(chat_id, message)
+        ad = "Please consider joining @usdollartracker for daily updates and more!"
+        self.sendMessage(chat_id, message + '\n' + ad)
         return
 
     def help(self, chat_id):
