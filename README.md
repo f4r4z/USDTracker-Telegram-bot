@@ -1,2 +1,2 @@
-# USDTracker_Telegram_bot
+# USDTracker Telegram bot
 A Telegram bot that tracks USD
