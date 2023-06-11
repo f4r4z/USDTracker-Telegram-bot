@@ -129,7 +129,7 @@ class Bot:
         updates a channel with general rate or it forwards the national anthem on saturdays
         '''
         current_time = datetime.now(timezone.utc)
-        if current_time.hour == 17 and current_time.minute == 0:
+        if current_time.hour == 4 and current_time.minute == 23:
             if not self.is_posted:
                 # if saturday forward national anthem
                 if current_time.weekday() == 5:
@@ -141,9 +141,9 @@ class Bot:
 
                 # set flag true to avoid posting duplcates within the same minute
                 self.is_posted = True
-            return
         # set is posted back to false once the specified time is passed
-        self.is_posted == False
+        else:
+            self.is_posted = False
 
     def run(self, update):
         '''
