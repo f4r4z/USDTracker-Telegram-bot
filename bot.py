@@ -130,7 +130,7 @@ class Bot:
         updates a channel with general rate or it forwards the national anthem on saturdays
         '''
         current_time = datetime.now(timezone.utc)
-        if current_time.hour == 4 and current_time.minute == 23:
+        if current_time.hour == 17 and current_time.minute == 0:
             if not self.is_posted:
                 # if saturday forward national anthem
                 if current_time.weekday() == 5:
